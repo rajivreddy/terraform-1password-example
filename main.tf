@@ -1,11 +1,10 @@
-provider "onepassword" {
-}
+# provider "onepassword" {
+# }
 
 
-provider "aws" {
-  region = "us-west-2"
-}
-
+# provider "aws" {
+#   region = "us-west-2"
+# }
 resource "null_resource" "install_op" {
 
   provisioner "local-exec" {
