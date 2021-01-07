@@ -44,4 +44,5 @@ resource "onepassword_item_login" "this" {
   url      = "https://console.aws.amazon.com/console/home"
   vault    = "Infrastructure"
   notes = "This is created via Terraform"
+  tags = ["terraform","test-user","1password"]
 }
