@@ -12,7 +12,7 @@ resource "null_resource" "install_op" {
   }
 
   provisioner "local-exec" {
-    command = "whoami; wget https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_linux_amd64_v1.8.0.zip; unzip op_linux_amd64_v1.8.0.zip;echo $PATH;export PATH=$PWD:$PATH;echo $PATH; op --version"
+    command = "whoami; ls -al; wget https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_linux_amd64_v1.8.0.zip; unzip op_linux_amd64_v1.8.0.zip;echo $PATH;export PATH=$PWD:$PATH;echo $PATH; op --version"
   }
 }
 
