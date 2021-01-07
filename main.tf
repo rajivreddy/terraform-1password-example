@@ -1,5 +1,5 @@
-provider "onepassword" {
-}
+# provider "onepassword" {
+# }
 
 
 provider "aws" {
@@ -27,11 +27,11 @@ resource "aws_iam_user" "lb" {
 resource "aws_iam_access_key" "lb" {
   user = aws_iam_user.lb.name
 }
-resource "onepassword_item_login" "this" {
-  name     = "terraform-test-user"
-  username = aws_iam_access_key.lb.id
-  password = aws_iam_access_key.lb.secret
-  url      = "https://console.aws.amazon.com/console/home"
-  vault    = "Infrastructure"
-  notes = "This is created via Terraform"
-}
+# resource "onepassword_item_login" "this" {
+#   name     = "terraform-test-user"
+#   username = aws_iam_access_key.lb.id
+#   password = aws_iam_access_key.lb.secret
+#   url      = "https://console.aws.amazon.com/console/home"
+#   vault    = "Infrastructure"
+#   notes = "This is created via Terraform"
+# }
