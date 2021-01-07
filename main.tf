@@ -1,3 +1,13 @@
+terraform {
+  required_providers {
+    onepassword = {
+      source = "anasinnyk/onepassword"
+      version = "1.2.1"
+    }
+  }
+}
+
+
 provider "onepassword" {
 }
 
