@@ -1,5 +1,5 @@
-# provider "onepassword" {
-# }
+provider "onepassword" {
+}
 
 
 provider "aws" {
